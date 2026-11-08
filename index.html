@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repository: My Project</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Section Styling */
+        section {
+            margin-top: 20px;
+        }
+
+        /* Link Styling */
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Button Styling */
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My GitHub Repository</h1>
+</header>
+
+<section>
+    <h2>About This Repository</h2>
+    <p>This project showcases my work hosted on GitHub. You can explore the code, issues, and more.</p>
+    <p>Visit my GitHub repository here: 
+        <a href="https://github.com/yourusername/your-repository" target="_blank">My GitHub Repository</a>
+    </p>
+</section>
+
+<section>
+    <h2>How to Use This Repo</h2>
+    <p>Clone the repository and follow the instructions in the README file to set it up on your machine.</p>
+</section>
+
+<!-- Button to trigger JS action -->
+<section>
+    <button id="changeColorBtn">Change Background Color</button>
+</section>
+
+<script>
+    // JavaScript to change the background color when the button is clicked
+    document.getElementById("changeColorBtn").addEventListener("click", function() {
+        // Generate a random color
+        var randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+        // Change the background color of the body
+        document.body.style.backgroundColor = randomColor;
+    });
+</script>
+
+</body>
+</html>
